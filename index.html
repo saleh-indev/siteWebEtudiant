@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AGOSA - Association</title>
+    <!--Fav icon-->
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon"/>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Box icon-->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!--js-->
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <!--header-->
+    <header id="home" class="header">
+         <!--Navigation-->
+         <nav class="nav">
+            <div class="navigation container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+                <div class="menu">
+                    <div class="top-nav">
+                       <div class="logo">
+                        <img src="./images/logo.png" alt="Logo">
+                       </div>
+                        <div class="close">
+                            <i class="bx bx-x"></i>
+                        </div>
+                    </div>
+                   <ul class="nav-list">
+                       <li class="nav-item"> <a href="#home" class="nav-link scroll-link">Home</a></li>
+                       <li class="nav-item"> <a href="#activities" class="nav-link scroll-link">Activities</a></li>
+                       <li class="nav-item"> <a href="#member" class="nav-link scroll-link">Members</a></li>
+                       <li class="nav-item"> <a href="#footer" class="nav-link scroll-link">About</a></li>
+                       <li class="nav-item"> <a href="contact.html" class="nav-link scroll-link">Contact</a></li>
+                       <li class="nav-item"> <a href="login.html" class="nav-link icon"><i class='bx bx-log-in'></i></a></li>
+                   </ul>
+                </div>
+                <a href="login.html" class="cart-icon"><i class="bx bx-log-in"></i></a>
+                <div class="hamburger">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+         </nav>         
+        <!--Hero-->
+        <div class="hero-content">
+            <h2>
+                <span class="discount">AGOSA</span> <!--VENTE DE--> 
+            </h2>
+            <div class="msg">
+                <div id="slider">
+                    <div class="msg-col">
+                        <h1>The Union</h1>
+                        <p>
+                            Hey, we’re the Union of Students and we exist to represent you, provide you with lots of fun and exciting opportunities, and to make sure you have the best possible experience whilst studying at the University. 
+                            As members of the Union you decide the direction we
+should take, which is why we sought and
+listened to your views in order to create this plan and why
+we will continue to seek your feedback to see how we are
+getting on at making the change you want to see. 
+                        </p><a href="#">See More</a>
+                    </div>
+                    <div class="msg-col">
+                        <h1>Our mission</h1>      
+                        
+                        <p>
+                            The Union of Students is excited to present our new
+                            strategic plan which outlines our ambitions to 2020. We
+                            have an exciting journey ahead of us as we seek to change
+                            the way we develop, support and empower you to make the
+                            most of your experience at the University. We want all students to have a transformative experience
+                            and by 2020 we want to be proud to say we have achieved
+                            record levels of engagement and be in the top quartile of
+                            Students’ Unions in the country for student satisfaction.
+                            This strategic plan will be a living document for us, with
+                            detailed plans in place to help us achieve our ultimate goals.</p>
+                           <a href="#">See More</a>
+                    </div>
+                    <div class="msg-col">
+                        <h1>Our goals</h1>
+                        <p>
+                            Create a vibrant student community that
+                            you are proud to belong to
+                            Provide transformative learning
+                            experiences in active partnership with the
+                            University
+                            Develop your skills and confidence to
+                            take your next steps and remain ready to
+                            support you
+                            Create the change you want by
+                            championing your voice to the University. Building a vibrant student community
+                            Developing you through transformative opportunities
+                            Championing clear and effective student voice
+                            Delivering flexible support and guidance
+                            Create data driven, positive outcomes</p>
+                        <a href="#">See More</a>
+                    </div>
+                    <div class="msg-col">
+                        <h1>Affiche</h1>
+                        <p>
+                            Use our research to tailor our Sports, Societies and Give It A
+                            Go activities to your interests and passions
+                            Create innovative shared spaces in partnership with the
+                            University with access to the services you need, where
+                            you need them
+                            Implement your ideas to transform our local community
+                            through volunteering and social action
+                            Work in partnership with the city to create a vibrant student
+                            culture outside the student bubble
+                            Support you through all transitions of the student journey
+                            by connecting you with each other
+                            Give voice to your opinion across all campuses through
+                            strong student media</p>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controller">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+                <div id="line4"></div>
+                <div id="active"></div>
+            </div>  
+        </div>
+        <script defer>
+            var slider = document.getElementById('slider');
+            var active = document.getElementById('active');
+            var line1 = document.getElementById('line1');
+            var line2 = document.getElementById('line2');
+            var line3 = document.getElementById('line3');
+            var line4 = document.getElementById('line4');
+            
+            line1.onclick = function()
+            {
+                slider.style.transform = 'translateX(0)';
+                active.style.top = '0px';
+            }
+            line2.onclick = function()
+            {
+                slider.style.transform = 'translateX(-25%)';
+                active.style.top = '80px';
+            }
+            line3.onclick = function()
+            {
+                slider.style.transform = 'translateX(-50%)';
+                active.style.top = '160px';
+            }
+            line4.onclick = function()
+            {
+                slider.style.transform = 'translateX(-75%)';
+                active.style.top = '240px';
+            }
+            </script>
+    </header>
+    <!--Main-->
+    <main>
+    <!--Members-->
+    <section class="section featured">
+        <div class="title" id="member">
+            <h1>Members</h1>
+        </div>
+        <div class="product-center container">
+            <!--un produit -->
+            <div class="product">
+                <div class="product-header">
+                    <img src="./images/member/pr.jpg" alt="PR">
+                </div>
+                <div class="product-footer">
+                    <a href="#">Presidente</a>
+                    <h4 class="price">Association de 2020</h4>
+                </div>
+             </div>
+             <div class="product">
+                <div class="product-header">
+                    <img src="./images/member/vp.jpeg" alt="PR">
+                </div>
+                <div class="product-footer">
+                    <a href="#">Vice President</a>
+                    <h4 class="price">Association de 2020</h4>
+                </div>
+             </div>
+             <div class="product">
+                <div class="product-header">
+                    <img src="./images/member/org.jpg" alt="PR">
+                </div>
+                <div class="product-footer">
+                    <a href="#">M. O. Secretary</a>
+                    <h4 class="price">Association de 2020</h4>
+                </div>
+             </div>
+             <div class="product">
+                <div class="product-header">
+                    <img src="./images/member/sg.jpg" alt="PR">
+                </div>
+                <div class="product-footer">
+                    <a href="#">Secretary General </a>
+                    <h4 class="price">Association de 2020</h4>
+                </div>
+             </div>
+             <div class="product">
+                <div class="product-header">
+                    <img src="./images/member/ogf.jpg" alt="PR">
+                </div>
+                <div class="product-footer">
+                    <a href="#">F. O. Secretary</a>
+                    <h4 class="price">Association de 2020</h4>
+                </div>
+             </div>
+        </div>
+    </section>
+    <!--Featured-->
+    <section class="section featured">
+        <div class="title" id="activities">
+            <h1>Our Activities</h1>
+            <h3>Nous faisons de nombreuses activités chaque année par lequelles, on a les activites suivant :</h3>
+        </div>
+        <div class="product-center container">
+            <!--un produit -->
+            <div class="product">
+                <div class="product-header">
+                    <img src="./images/activities/activ_1.jpg" alt="produit 1">
+                </div>
+                <div class="product-footer">
+                    <a href="#">Chanceliere Embassy</a>
+                    <h4 class="price">Honoration</h4>
+                </div>
+             </div>
+             <div class="product">
+                <div class="product-header">
+                    <img src="./images/activities/activ_2.jpg" alt="produit 1">
+                </div>
+                <div class="product-footer">
+                    <a href="#">Other</a>
+                    <h4 class="price">RAWLINGS</h4>
+                </div>
+             </div>
+             <div class="product">
+                <div class="product-header">
+                    <img src="./images/activities/activ_1.jpg" alt="produit 1">
+                </div>
+                <div class="product-footer">
+                    <a href="#">Chanceliere</a>
+                    <h4 class="price">HONORATION</h4>
+                </div>
+             </div>  
+        </div>
+    </section>
+  
+
+    <!--Testimonial  les avis-->
+    <section class="section">
+        <div class="title">
+            <h1>Student Reviews</h1>
+        </div>
+        <div class="testimonial-center container">
+            <div class="testimonial">
+                <span>&ldquo;</span>
+                <p>
+                    Since I joined university everyday I had opportunity to learn something new. It met my expectations and had a great time. I specifically love the modern plus countryside vibe which is perfect for studying. </p>
+                </p>
+                <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i> 
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bx-star"></i>
+                </div>
+                <div class="img-cover">
+                    <img src="./images/avis/avis.jpeg" alt="Profil 1">
+                </div>
+                <h4>ADAM MOHAMMED</h4>
+                <h3>From Boumerdes</h3>
+            </div> 
+            <div class="testimonial">
+                <span>&ldquo;</span>
+                <p>
+                    quite good, I made lots of friends and the uni building are great. such a shame my second and third year has gone so fast and in lockdown. but my first year was awesome and finding the perfect balance between my studies and having fun has been amazing. I really have had a good time. </p>
+                <div class="rating">
+                    <i class="bx bxs-star"></i>
+        
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i> 
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <div class="img-cover">
+                    <img src="./images/avis/avis_2.jpeg" alt="Profil 1">
+                </div>
+                <h4>FAROUKH</h4>
+                <h3>From Boumerdes</h3>
+            </div> 
+            <div class="testimonial">
+                <span>&ldquo;</span>
+                <p>
+                    Since I joined university everyday I had opportunity to learn something new. It met my expectations and had a great time. I specifically love the modern plus countryside vibe which is perfect for studying. </p>
+                <div class="rating">
+                    <i class="bx bxs-star"></i>
+        
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i> 
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                </div>
+                <div class="img-cover">
+                    <img src="./images/avis/avis_3.jpg" alt="Profil 1">
+                </div>
+                <h4>SILAS</h4>
+                <h3>From Algiers</h3>
+            </div> 
+            
+        </div>
+    </section>
+
+    <!--Brands les marques -->
+    <section class="section">
+        <div class="brands-center container">
+            <div class="brand">
+                <img src="./images/marque/brand_1.png" alt="">
+            </div>
+            <div class="brand">
+                <img src="./images/marque/brand_1.png" alt="">
+            </div>
+            <div class="brand">
+                <img src="./images/marque/brand_1.png" alt="">
+            </div>
+            <div class="brand">
+                <img src="./images/marque/brand_1.png" alt="">
+            </div>
+            <div class="brand">
+                <img src="./images/marque/brand_1.png" alt="">
+            </div>
+            <div class="brand">
+                <img src="./images/marque/brand_1.png" alt="">
+            </div>
+        </div>
+    </section>
+    </main> <!--end main-->
+    <!--footer-->
+    <footer id="footer" class="section footer">
+        <div class="container">
+          <div class="footer-container">
+            <div class="footer-center">
+              <h3>ABOUT US</h3>
+           
+            </div>
+            <div class="footer-center">
+              <h3>INFORMATIONS</h3>
+              <a href="#">A propos de nous</a>
+              <a href="#">Termes et Conditions</a>
+              <a href="contact.html">Contactez-nous</a>
+            
+            </div>
+            <div class="footer-center">
+              <h3>CONTACT US</h3>
+    
+              <a href="#">Newsletter</a>
+            </div>
+           
+            <div class="footer-center">
+                 <h3>OTHER</h3>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+      <div class="copy">
+         <div class="incopy">
+            <span class="nom_edit"> <a href="mailto:salehindev@gmail.com">Saleh in-Dev</a></span>
+            <span>|  2020  |©Tous droits réservés </span>
+            <span class="social">
+                <a href="#"><span><i class='bx bxl-instagram-alt' ></i></span></a>
+                <a href="#"><span><i class='bx bxl-facebook-square'></i></span></a>
+                <a href="#"><span><i class='bx bx-mail-send'></i></i></span></a>
+            </span>
+        </div>
+        
+      </div>
+      
+      <!-- End Footer -->
+    <!--gspa-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!--js-->
+    <script src="./js/index.js"></script>
+</body>
+</html>
