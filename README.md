@@ -1,2 +1,2 @@
 # siteWebEtudiant
-C'est un petit projet web pour la gestion d'une association des etudiants vivant dans un pays etranger. 
+C'est petit projet web pour la gestion d'une association des étudiants vivant à l'etranger. 
